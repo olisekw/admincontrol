@@ -48,6 +48,9 @@ ul {
 .main {
   background-color: black;
 }
+
+/* header */
+
 .header {
   background-color: red;
   display: flex;
@@ -62,24 +65,80 @@ ul {
   align-items: center;
 }
 
+.user > .userIcon{
+    font-size: 45px;
+}
+/* search */
 .search {
   display: flex;
-  width: 40px;
+  width: 100%;
   gap: 1em;
+  align-items: center;
 }
+
+.projects {
+    background-color: green;
+}
+input {
+    background-color: white;
+    height: 40%;
+    width: 100%;
+}
+
+
+h3{
+    background-color: white;
+}
+
+/* controls */
 
 .controls {
   background-color: pink;
+  display: flex;
+  height: 10%;
+
 }
-.projects {
-  background-color: green;
-}
-input {
-  background-color: white;
-  width: 100%;
+.controls span{
+    margin: 20px;
+    font-size: 60px;
 }
 
+p{
+    font-weight: bold;
+    margin-top: 2em;
+    margin-bottom: -1em;
+}
+
+.buttons{
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+    width: 40%;
 
 
+}
+
+button{
+
+    height: 25%;
+    width: 50%;
+background-color: lightblue;
+    border-radius: 9px;
+    border: none;
+}
+
+.buttons:last-child{
+    margin-right: 2em;
+}
 
 
+.empty{
+    width: 60%;
+}
+
+/* was breaking for some reason, this fixes it */
+h2{
+    white-space: nowrap; 
+}
